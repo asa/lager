@@ -1,0 +1,11 @@
+module(
+    name = "lager",
+    version = "0.1.1",
+    compatibility_level = 1,
+)
+bazel_dep(name = "catch2", version = "3.7.1")
+bazel_dep(name = "boost.hana", version = "3.7.1")
+bazel_dep(name = "boost.intrusive", version = "1.87.0")
+bazel_dep(name = "immer", version = "0.8.1")
+bazel_dep(name = "zug", version = "0.1.1")
+bazel_dep(name = "cereal", version = "0.0.1")

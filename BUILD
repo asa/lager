@@ -5,14 +5,16 @@ cc_library(
     hdrs = glob([
         "lager/**/*.hpp",
     ]),
-    deps = [
-        "@boost//:hana",
-        "@boost//:intrusive",
-        "@boost//:intrusive_ptr",
-        "@zug//:zug",
-        "@cereal//:cereal",
-        "@immer",
+    includes = [
+        ".",
+        "lager/",
     ],
-    includes = [".", "lager/"],
     visibility = ["//visibility:public"],
+    deps = [
+        "@boost.hana",
+        "@boost.intrusive",
+        "@cereal",
+        "@immer",
+        "@zug",
+    ],
 )
